@@ -1,0 +1,34 @@
+.comment_post {
+    margin-top: 20px;
+}
+
+.user_info {
+    margin: 10px;
+    font-weight: bolder;
+}
+
+.message_post {}
+
+.list_comments,
+.comment {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.showComment {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+hr {
+    border: 2px solid;
+}
+
+.showPost{
+    margin-top: 10px;
+}
+.thPost{
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}

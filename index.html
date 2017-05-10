@@ -1,0 +1,85 @@
+<html>
+
+<head>
+    <title>Show Adonis</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous">
+
+
+    </script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/app.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+</head>
+
+<body>
+    <div class="conteiner">
+        <div class="col-md-12">
+            <h1>VrauTwit
+                <small>
+                    <a href="#" class="btn btn-primary" id="btnLogin" data-toggle="modal" data-target="#modalLogin">Fazer Login</a>
+                    <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#modalRegister">Register</a>
+                    <div class="logoutBtn"></div>
+                </small>
+            </h1>
+            <div class="thPost"></div>
+            <div class="list_posts"></div>
+        </div>
+    </div>
+
+    <!-- Modal Login -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Login</h4>
+                </div>
+                <div class="modal-body">
+                    <label for="">Email</label>
+                    <input type="text" class="form-control" id="email">
+                    <label for="">Password</label>
+                    <input type="password" class="form-control" id="password">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="doLogin">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Register -->
+    <div class="modal fade" id="modalRegister" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Registre-se</h4>
+                </div>
+                <div class="modal-body">
+                    <label for="">UserName</label>
+                    <input type="text" id="username_register" class="form-control">
+                    <label for="">Email</label>
+                    <input type="text" id="email_register" class="form-control">
+                    <label for="">Password</label>
+                    <input type="password" id="password_register" class="form-control"> 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" id="register">Salvar</button>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
